@@ -34,6 +34,6 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
     console.log('UserType:', localStorage.getItem('userType'));
   
     // Optional: redirect or show confirmation
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
   });
   
