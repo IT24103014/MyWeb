@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="navbar/navbar.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<header class="navbar">
+    <div class="container">
+        <div class="logo">LITECINEMAS</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="movies.html" class="nav-link">Movies</a></li>
+                <li><a href="team.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-section">
+            <!-- Shown when user is NOT logged in -->
+            <div class="auth-buttons" id="authButtons">
+                <a href="login.html" class="btn login-btn">Login / Sign Up</a>
+                <button type="button" class="btn guest-btn" id="guestBtn">Continue as Guest</button>
+            </div>
+
+            <!-- Shown when user IS logged in -->
+            <div class="user-profile" id="userProfile">
+                <span class="welcome-msg">Welcome, <span id="usernameDisplay">Guest</span></span>
+                <div class="user-avatar" id="userAvatar">
+                    <span id="avatarInitials">G</span>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="#" id="logoutBtn">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+       <script src="navbar/navbar.js"></script>
+</body>
+</html>

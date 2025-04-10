@@ -1,0 +1,169 @@
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #000;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e50914;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e50914;
+    text-shadow: 0 0 8px rgba(229, 9, 20, 0.5);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    position: relative;
+    padding: 5px 0;
+}
+
+.main-nav a:hover {
+    color: #e50914;
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e50914;
+    transition: width 0.3s;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+/* Auth Section Styles */
+.auth-section {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.user-profile {
+    display: none;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.welcome-msg {
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.welcome-msg span {
+    color: #e50914;
+    font-weight: 600;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #e50914;
+}
+
+.user-avatar span {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #111;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 180px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 100;
+    border: 1px solid #333;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 20px;
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #222;
+    color: #e50914;
+}
+
+/* Button Styles */
+.btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.login-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.guest-btn {
+    background-color: #e50914;
+    color: white;
+    border: none;
+}
+
+.guest-btn:hover {
+    background-color: #b2070f;
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+}
